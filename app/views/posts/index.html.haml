@@ -1,0 +1,5 @@
+= @posts.first.title
+= @posts.first.body
+= link_to 'Show', @posts.first
+= link_to 'Edit', edit_post_path(@posts.first)
+= link_to 'Destroy', post_path(@posts.first), :confirm => 'Are you sure?', :method => :delete

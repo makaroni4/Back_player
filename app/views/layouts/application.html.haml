@@ -1,0 +1,20 @@
+!!!
+%html
+  %head
+    %title Mega super puper
+    = stylesheet_link_tag :all
+    = javascript_include_tag 'https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js', 'rails', 'application'
+    = csrf_meta_tag 
+%body
+
+#header
+  %h1
+    Amazing super duper player prototype
+#content
+  = yield
+#nav
+  - Post.all.each do |post|
+    = link_to "#{post.title}", post_path(post), :remote => true
+  = link_to 'New Post', new_post_path
+#footer
+  Hey yo, this is a cool prototype
