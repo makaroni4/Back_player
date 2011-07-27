@@ -1,19 +1,11 @@
-body { background-color: #fff; color: #333; }
-
-body, p, ol, ul, td {
-  font-family: verdana, arial, helvetica, sans-serif;
-  font-size:   13px;
-  line-height: 18px;
-}
-
 pre {
   background-color: #eee;
   padding: 10px;
   font-size: 11px;
 }
 
-a { color: #000; }
-a:visited { color: #666; }
+a { color: #284B7E; }
+a:visited { color: #284B7E; }
 a:hover { color: #fff; background-color:#000; }
 
 div.field, div.actions {
@@ -56,17 +48,25 @@ div.field, div.actions {
 }
 
 #header{
-  background: #fff;
+	height: 100px;
+	display: block;
+	padding-left: 50px;
+	background: #eee;
 }
 
-#content{
-  background: #abc;
+.content{
+	width: 600px;
+	height: 350px;
+	margin: 50px auto 0;
+	background: #FFCB73;
 }
 
-#nav{
-  background: #aaa;
+.nav{
+	text-align: center;
 }
 
-#footer{
-  background: #aaa;
+.hint{
+	font-size: 11px;
+	font-style: italic;
+	display: inline;
 }
