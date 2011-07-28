@@ -1,0 +1,13 @@
+{
+  "posts": [
+    <% @posts.each do |post| %>
+      {
+        "title": "<%= post.title %>",
+        "body": "<%= post.body %>",
+        <% if post.image.url %>
+          "image_url" : "<%= post.image_url %>"
+        <% end %>
+      }
+    <% end %>
+  ]
+}

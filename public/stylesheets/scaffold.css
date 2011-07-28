@@ -56,9 +56,7 @@ div.field, div.actions {
 
 .content{
 	width: 600px;
-	height: 350px;
-	margin: 50px auto 0;
-	background: #FFCB73;
+	margin: 50px auto 50px;
 }
 
 .nav{
@@ -69,4 +67,35 @@ div.field, div.actions {
 	font-size: 11px;
 	font-style: italic;
 	display: inline;
+}
+
+#posts_div{
+	margin-bottom: 50px;
+	background: #eee;
+}
+
+#concerts_div{
+	margin-bottom: 50px;
+	background: #eee;
+}
+
+.div_head{
+	clear: both;
+	width: 100px;
+	background: yellow;
+}
+
+.concert_div{
+	float: left;
+	margin-left: 5px;
+}
+
+#posts_nav{
+	float: left;
+	width: 100px;
+}
+
+#posts{
+	float: right;
+	width: 500px;
 }

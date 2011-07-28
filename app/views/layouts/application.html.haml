@@ -15,10 +15,15 @@
   .wrapper
     #header
       %h1
-        BANZAI
+        = link_to "BANZAI", root_path
       this is a test project for background audioplayer
       
       <iframe width="399" height="28" src="http://www.youtube.com/embed/BkpXoM0D-Pk" frameborder="0" allowfullscreen></iframe>
+      
+      %br
+      %h3
+        = link_to 'New Post', new_post_path  
+        = link_to 'New Concert', new_concert_path
       
       
     .content
@@ -26,11 +31,9 @@
     .push
   
   .footer
-    .nav
-      .hint
-        Navigation links (that respond with json):
-      - Post.all.each do |post|
-        = link_to "#{post.title}", post_path(post), :remote => true
-    %br
-    %h3
-      = link_to 'New Post', new_post_path  
+    %i
+      makaroni4 
+    and 
+    %i
+      agentcooper 
+    production © 2011

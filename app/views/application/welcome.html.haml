@@ -1,0 +1,11 @@
+.div_head
+  = link_to "Concerts", concerts_path, :remote => true
+#concerts_div
+  - @concerts.each do |concert|
+    = render 'concerts/concert', :concert => concert
+
+.div_head
+  = link_to "Posts", posts_path, :remote => true
+#news_div
+  - @posts.each do |post|
+    = render 'posts/post', :post => post

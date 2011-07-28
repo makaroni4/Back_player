@@ -1,0 +1,11 @@
+{
+  "concerts": [
+    <% @concerts.each do |concert| %>
+      {
+        "date": "<%= concert.date %>",
+        "city": "<%= concert.city %>",
+        "club": "<%= concert.club %>"
+      }
+    <% end %>
+  ]
+}
