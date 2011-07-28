@@ -3,14 +3,24 @@
   %head
     %title Mega super puper
     = stylesheet_link_tag :all
-    = javascript_include_tag 'https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js', 'rails', 'application'
+    = javascript_include_tag 'http://documentcloud.github.com/backbone/test/vendor/jquery-1.5.js', 'http://documentcloud.github.com/backbone/test/vendor/underscore-1.1.6.js', 'http://documentcloud.github.com/backbone/backbone.js'
+    = javascript_include_tag 'https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js', 'rails', 'application', 'app'
     = csrf_meta_tag 
 %body
+  %script{:type => "text/template", :id => 'block_template'}
+    <h1><%= title %></h1>
+    <p><%= body %></p>
+    <img src='<%= image_url %>'>
+
   .wrapper
     #header
       %h1
         BANZAI
       this is a test project for background audioplayer
+      
+      <iframe width="399" height="28" src="http://www.youtube.com/embed/BkpXoM0D-Pk" frameborder="0" allowfullscreen></iframe>
+      
+      
     .content
       = yield          
     .push
